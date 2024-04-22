@@ -114,7 +114,9 @@ server.delete("/datos",(req,rep)=>{
 
 
 
-
+server.get("/",(req,res)=>{
+    res.send("hola");
+});
 
 server.listen(5555,()=>{
     console.log('servidor en linea en el puerto 5555');
