@@ -1,0 +1,290 @@
+#did{
+    max-width: 50%;
+    height: 100%;
+    opacity: 1;
+
+}
+
+
+nav{
+    display:flex;
+    width: 50%;
+}
+
+#bb{
+
+    width: 700px;
+    height: 2%;
+    background:none;
+    border:none ;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#log{
+    width:300px;
+    position:absolute;
+    top:30%;
+    left:15%;
+    perspective: 300px;
+}
+
+#log2{
+    
+    transform: rotatey(0deg);
+    filter:drop-shadow(2px 2px 5px rgb(255, 255, 255));
+    width: 100%;
+    height: 100%;
+    animation: girar 5s infinite;
+    animation-delay: 4s;
+}
+
+
+@keyframes girar {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
+
+
+header {
+    width: 100%;
+    z-index: 9999999;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 50px;
+    display: flex;
+    background-color: #103f9b;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+
+    margin-left:800px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+header nav ul li {
+  
+    color:white;
+    text-decoration: none;
+    margin-right: 30px;
+    width: 100px;
+}
+
+main {
+    margin-top: 4%;
+    max-height: 900px;
+    background-image: url('fondo2.jpg');
+    background-size: 100% 100%;
+    padding: 10px;
+    display: flex;
+}
+
+.container {
+    perspective: 200px;
+    max-width:40%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+.services {
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+.ico {
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color:white;
+   
+}
+
+#coment{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 0.6s ease-out;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: rotateY(-180deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-front {
+    background-color: #333;
+    color: #fff;
+}
+
+.card-back {
+    transform: rotateY(-180deg);
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius:
